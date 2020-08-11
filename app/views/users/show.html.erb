@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @user.full_name %>
+</p>
+
+<p>
+<strong>Website Headers</strong>
+<%= @user.headers %>
+</p>
+<p>
+  <strong>Personal Website:</strong>
+  <%= link_to @user.personal_website_url, "http://#{@user.personal_website_url}"%>
+</p>
+
+<p>
+  <strong>Shortened Personal Website:</strong>
+  <%= link_to @user.shortened_personal_website_url, "http://#{@user.shortened_personal_website_url}" %>
+</p>
+
+<p>
+  <strong>Friends :</strong>
+  <% @user.friends.each do |friend| %>
+    <%= link_to friend.full_name, user_path(friend) %><br />
+  <% end %>
+
+</p>
+
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
