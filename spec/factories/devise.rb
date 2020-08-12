@@ -4,6 +4,7 @@ FactoryBot.define do
     email {"test@user.com"}
     password {"123456"}
     full_name {"John Doe"}
+    personal_website_url {"https://dhh.dk"}
     # Add additional fields as required via your User model
   end
 

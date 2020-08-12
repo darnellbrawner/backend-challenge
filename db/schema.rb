@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_08_11_184241) do
 
   create_table "friendships", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "friended_user_id"
+    t.integer "user_id", null: false
+    t.integer "friended_user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
