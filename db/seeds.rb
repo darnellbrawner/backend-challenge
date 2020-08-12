@@ -6,9 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 movies = User.create([
-    { id: 2, full_name: 'User 1', email: 'user1@users.com', personal_website_url: 'user.user1.com', headers: 'food', password: "123456", password_confirmation: "123456",},
-    { id: 3, full_name: 'User 2', email: 'user2@users.com', personal_website_url: 'user.user2.com', headers: 'sports', password: "123456", password_confirmation: "123456",}, 
-    { id: 4, full_name: 'User 3', email: 'user3@users.com', personal_website_url: 'user.user3.com', headers: 'movies', password: "123456", password_confirmation: "123456",}])
+    { id: 2, full_name: 'User 1', email: '', personal_website_url: 'user.user1.com', headers: 'food', password: "123456", password_confirmation: "123456",},
+    { id: 3, full_name: 'User 2', email: '', personal_website_url: 'user.user2.com', headers: 'sports', password: "123456", password_confirmation: "123456",}, 
+    { id: 4, full_name: 'User 3', email: '', personal_website_url: 'user.user3.com', headers: 'movies', password: "123456", password_confirmation: "123456",}])
 Friendship.create([
     {user_id: 2, friended_user_id: 3},
     {user_id: 2, friended_user_id: 4},
